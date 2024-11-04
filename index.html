@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Bootstrap CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!--Font awsome icon-->
+    <script src="https://kit.fontawesome.com/d4fd55d14f.js" crossorigin="anonymous"></script>
+     <!--Bootstrap JS-->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+     <!-- Custom CSS for styling -->
+<style>
+    /* Custom Tab Styling */
+    .custom-tab {
+        background-color: #1a3a5f;
+        color: white;
+        border-radius: 20px;
+        margin-right: 5px;
+        padding: 10px 15px;
+        transition: background-color 0.3s;
+    }
+
+    .custom-tab.active, .custom-tab:hover {
+        background-color: #0d2d4d;
+        color: white;
+    }
+
+    /* Project Card Hover Icons */
+    .card-img-container {
+        position: relative;
+    }
+
+    .card-img-top {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+
+    .overlay-icons {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.6);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+    }
+
+    .overlay-icons i {
+        color: #fff;
+        font-size: 1.5rem;
+    }
+
+    .project-card:hover .overlay-icons {
+        opacity: 1;
+    }
+</style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #1a3a5f;">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#" style="color: #f8f9fa;">Rashedul Haque</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#" style="color: #f8f9fa;"><i class="fa-solid fa-graduation-cap me-2"></i>Education</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" style="color: #f8f9fa;"><i class="fa-solid fa-briefcase me-2"></i>Experience</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" style="color: #f8f9fa;"><i class="fa-solid fa-list-check me-2"></i>Projects</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+    <!-- Header Section -->
+    <section class="container my-5 p-5" style="background-color: #f0f4f8; border-radius: 10px;">
+        <div class="row align-items-center">
+            <!-- Left Column: Name and Title -->
+            <div class="col-md-6 text-center text-md-start">
+                <h1 style="display: inline-block; border-bottom: 3px solid #1a3a5f; padding-bottom: 5px;">Rashedul Haque</h1>
+                <h3 class="text-muted mt-3">AI Engineer</h3>
+                <p class="lead">Passionate about leveraging AI to create impactful solutions. Experienced in machine learning, data analysis, and software engineering.</p>
+                <a href="path/to/your-cv.pdf" download class="btn btn-primary mt-3"><i class="fa-solid fa-file me-2"></i>Download CV</a>
+            </div>
+        
+            <!-- Right Column: Profile Image -->
+            <div class="col-md-6 text-center">
+                <img src="image/profile_image.png" alt="Rashedul Haque" class="img-fluid rounded-circle" style="max-width: 250px;">
+            </div>
+        </div>
+    </section>
+    <!-- Education Section -->
+    <section id="education" class="container my-5 p-5" style="background-color: #f0f4f8; border-radius: 10px;">
+        <h2 style="border-bottom: 3px solid #1a3a5f; padding-bottom: 10px;">Education</h2>
+        <div class="timeline mt-4 position-relative">
+
+            <!-- Timeline Line -->
+            <div class="timeline-line position-absolute top-0 start-50 translate-middle-x" style="width: 4px; background-color: #1a3a5f; height: 100%;"></div>
+
+            <!-- Master's Degree -->
+            <div class="row mb-5 position-relative">
+                <!-- Circle for intersection -->
+                <div class="circle position-absolute start-50 translate-middle" style="top: 0; transform: translateX(-50%) translateY(-50%); width: 15px; height: 15px; background-color: #1a3a5f; border-radius: 50%;"></div>
+                <div class="col-md-6 text-end">
+                    <p class="text-muted">2024 - 2025</p>
+                </div>
+                <div class="col-md-6">
+                    <div class="card" style="background-color: #ffffff; border: 1px solid #ddd; border-radius: 10px;">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-2">
+                                <img src="image/uts.png" alt="University of Technology Sydney Logo" style="width: 50px; height: 50px; margin-right: 15px;">
+                                <div>
+                                    <h4 class="card-title mb-0">Master of Artificial Intelligence</h4>
+                                    <p class="text-muted mb-1">
+                                        <a href="https://www.uts.edu.au/" target="_blank" style="color: inherit; text-decoration: none;">
+                                            University of Technology Sydney
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+                            <p class="mb-1"><strong>Submajor:</strong> Natural Language Processing</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bachelor's Degree -->
+            <div class="row mb-5 position-relative">
+                <!-- Circle for intersection -->
+                <div class="circle position-absolute start-50 translate-middle" style="top: 0; transform: translateX(-50%) translateY(-50%); width: 15px; height: 15px; background-color: #1a3a5f; border-radius: 50%;"></div>
+                <div class="col-md-6 text-start order-md-2">
+                    <p class="text-muted">2019 - 2022</p>
+                </div>
+                <div class="col-md-6 order-md-1">
+                    <div class="card" style="background-color: #ffffff; border: 1px solid #ddd; border-radius: 10px;">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-2">
+                                <img src="image/aiub.png" alt="American International University-Bangladesh Logo" style="width: 50px; height: 50px; margin-right: 15px;">
+                                <div>
+                                    <h4 class="card-title mb-0">Bachelor of Science in Computer Science and Engineering</h4>
+                                    <p class="text-muted mb-1">
+                                        <a href="https://www.aiub.edu/" target="_blank" style="color: inherit; text-decoration: none;">
+                                            American International University-Bangladesh
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+                            <p class="mb-1"><strong>Major:</strong> Software Engineering</p>
+                            <p class="mb-1"><strong>CGPA:</strong> 3.84 / 4.00</p>
+                            <p class="mb-1">
+                                <strong>Award:</strong>
+                                <a href="#" data-bs-toggle="modal" data-bs-target="#deanAwardModal" style="text-decoration: none;">
+                                    Dean’s Award (Fall 2021-22) for achieving a 4.0 GPA in the semester
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Modal for Dean's Award Certificate -->
+                    <div class="modal fade" id="deanAwardModal" tabindex="-1" aria-labelledby="deanAwardModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-lg modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="deanAwardModalLabel">Dean’s Award Certificate</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <!-- Certificate Image -->
+                                    <img src="image/dean_honor.jpg" alt="Dean’s Award Certificate" class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- Job Experience Section -->
+    <section id="experience" class="container my-5 p-5" style="background-color: #f0f4f8; border-radius: 10px;">
+        <h2 style="border-bottom: 3px solid #1a3a5f; padding-bottom: 10px;">Experience</h2>
+        <div class="timeline mt-4 position-relative">
+
+            <!-- Timeline Line -->
+            <div class="timeline-line position-absolute top-0 start-50 translate-middle-x" style="width: 4px; background-color: #1a3a5f; height: 100%;"></div>
+
+            <!-- Job 1 -->
+            <div class="row mb-5 position-relative">
+                <!-- Circle for intersection -->
+                <div class="circle position-absolute start-50 translate-middle" style="top: 0; transform: translateX(-50%) translateY(-50%); width: 15px; height: 15px; background-color: #1a3a5f; border-radius: 50%;"></div>
+                <div class="col-md-6 text-end">
+                    <p class="text-muted">Jun 2023 - Oct 2023</p>
+                </div>
+                <div class="col-md-6">
+                    <div class="card" style="background-color: #ffffff; border: 1px solid #ddd; border-radius: 10px;">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-2">
+                                <img src="image/venus_logo.jpeg" alt="Venus IT Limited Logo" style="width: 50px; height: 50px; margin-right: 15px;">
+                                <div>
+                                    <h4 class="card-title mb-0">Junior Software Developer</h4>
+                                    <p class="text-muted mb-1">Venus IT Limited · Contract</p>
+                                </div>
+                            </div>
+                            <p>In this role, I worked on a project for the Bangladesh Army's Cadet College, managed by Venus IT Limited. My key responsibilities included:</p>
+                            <ul>
+                                <li>Gathering and analyzing project requirements to meet the needs of the Cadet College.</li>
+                                <li>Developing administrative features using Laravel as the primary framework.</li>
+                            </ul>
+                            <p><strong>Skills: </strong><i class="fa-brands fa-laravel"></i> Laravel <i class="fa-brands fa-react"></i> React JS</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Job 2 -->
+            <div class="row mb-5 position-relative">
+                <!-- Circle for intersection -->
+                <div class="circle position-absolute start-50 translate-middle" style="top: 0; transform: translateX(-50%) translateY(-50%); width: 15px; height: 15px; background-color: #1a3a5f; border-radius: 50%;"></div>
+                <div class="col-md-6 text-start order-md-2">
+                    <p class="text-muted">Aug 2022 - Nov 2022</p>
+                </div>
+                <div class="col-md-6 order-md-1">
+                    <div class="card" style="background-color: #ffffff; border: 1px solid #ddd; border-radius: 10px;">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-2">
+                                <img src="image/diligent_logo.jpeg" alt="Diligent Soft IT Logo" style="width: 50px; height: 50px; margin-right: 15px;">
+                                <div>
+                                    <h4 class="card-title mb-0">Laravel Developer</h4>
+                                    <p class="text-muted mb-1">Diligent Soft IT · Internship</p>
+                                </div>
+                            </div>
+                            <p>As part of my undergraduate program, I completed an internship at Discrete Soft IT as a Laravel Developer. This experience enhanced my professional skills and gave me a deeper understanding of industry culture.</p>
+                            <ul>
+                                <li>Developed teamwork, communication, and time management skills.</li>
+                                <li>Gained valuable problem-solving strategies and learned website hosting on AWS.</li>
+                            </ul>
+                            <p><strong>Skills:</strong> <i class="fa-brands fa-laravel"></i> Laravel <i class="fa-brands fa-vuejs"></i> Vue JS <i class="fa-brands fa-aws"></i> AWS</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- Projects Section -->
+<section id="projects" class="container my-5 p-5" style="background-color: #f0f4f8; border-radius: 10px;">
+    <h2 style="border-bottom: 3px solid #1a3a5f; padding-bottom: 10px;">Projects</h2>
+    
+    <!-- Tabs Navigation -->
+    <ul class="nav nav-pills justify-content-center mb-4" id="projectTabs" role="tablist" style="gap: 10px;">
+        <li class="nav-item" role="presentation">
+            <button class="nav-link active custom-tab" id="web-dev-tab" data-bs-toggle="tab" data-bs-target="#web-dev" type="button" role="tab" aria-controls="web-dev" aria-selected="true">Web Development</button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link custom-tab" id="ml-tab" data-bs-toggle="tab" data-bs-target="#ml" type="button" role="tab" aria-controls="ml" aria-selected="false">Machine Learning</button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link custom-tab" id="mobile-tab" data-bs-toggle="tab" data-bs-target="#mobile" type="button" role="tab" aria-controls="mobile" aria-selected="false">Mobile Apps</button>
+        </li>
+    </ul>
+
+    <!-- Tabs Content -->
+    <div class="tab-content" id="projectTabsContent">
+        <!-- Web Development Projects -->
+        <div class="tab-pane fade show active" id="web-dev" role="tabpanel" aria-labelledby="web-dev-tab">
+            <div class="row mt-4">
+                <!-- Project Card -->
+                <div class="col-md-3 mb-4">
+                    <div class="card project-card">
+                        <div class="card-img-container position-relative">
+                            <img src="path/to/your/image1.jpg" class="card-img-top" alt="Project Image">
+                            <div class="overlay-icons">
+                                <a href="https://github.com/yourproject" target="_blank"><i class="fab fa-github"></i></a>
+                                <a href="https://drive.google.com/yourproject" target="_blank"><i class="fas fa-cloud-download-alt"></i></a>
+                                <a href="https://yourprojectlink.com" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">E-commerce Website</h5>
+                            <p class="card-text">Developed a full-stack e-commerce application using Laravel and Vue.js.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add more project cards as needed -->
+            </div>
+        </div>
+
+        <!-- Machine Learning Projects -->
+        <div class="tab-pane fade" id="ml" role="tabpanel" aria-labelledby="ml-tab">
+            <div class="row mt-4">
+                <div class="col-md-3 mb-4">
+                    <div class="card project-card">
+                        <div class="card-img-container position-relative">
+                            <img src="path/to/your/image2.jpg" class="card-img-top" alt="Project Image">
+                            <div class="overlay-icons">
+                                <a href="https://github.com/yourproject" target="_blank"><i class="fab fa-github"></i></a>
+                                <a href="https://drive.google.com/yourproject" target="_blank"><i class="fas fa-cloud-download-alt"></i></a>
+                                <a href="https://yourprojectlink.com" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Car Price Prediction</h5>
+                            <p class="card-text">A regression model to predict car prices based on various features.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Apps Projects -->
+        <div class="tab-pane fade" id="mobile" role="tabpanel" aria-labelledby="mobile-tab">
+            <div class="row mt-4">
+                <div class="col-md-3 mb-4">
+                    <div class="card project-card">
+                        <div class="card-img-container position-relative">
+                            <img src="path/to/your/image3.jpg" class="card-img-top" alt="Project Image">
+                            <div class="overlay-icons">
+                                <a href="https://github.com/yourproject" target="_blank"><i class="fab fa-github"></i></a>
+                                <a href="https://drive.google.com/yourproject" target="_blank"><i class="fas fa-cloud-download-alt"></i></a>
+                                <a href="https://yourprojectlink.com" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Health Tracker</h5>
+                            <p class="card-text">A mobile app to track health metrics developed using Flutter.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    <!-- Footer Section -->
+    <footer class="bg-dark text-light text-center py-3">
+        <p>&copy; 2023 Rashedul Haque. All rights reserved.</p>
+    </footer>
+</body>
+</html>
