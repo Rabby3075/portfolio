@@ -50,23 +50,27 @@
             <!-- Left Column: Name, Title, and Contact -->
             <div class="col-md-6 text-center text-md-start">
                 <h1 style="display: inline-block; border-bottom: 3px solid #1a3a5f; padding-bottom: 5px;">Rashedul Haque</h1>
-                <h3 class="text-muted mt-3">AI Engineer</h3>
+                <h3 class="text-muted mt-3">Master in AI Student at UTS</h3>
                 <p class="lead">Passionate about leveraging AI to create impactful solutions. Experienced in machine learning, data analysis, and software engineering.</p>
                 
                 <!-- Contact Icons -->
-                <div class="mt-3">
+                <div class="mt-4">
                     <a href="mailto:rashed.rabby43@gmail.com" target="_blank" class="me-3" style="color: #1a3a5f; text-decoration: none;">
                         <i class="fas fa-envelope"></i> Email
                     </a>
                     <a href="https://www.linkedin.com/in/rashedul-haque-6a1897194/" target="_blank" class="me-3" style="color: #1a3a5f; text-decoration: none;">
                         <i class="fab fa-linkedin"></i> LinkedIn
                     </a>
-                    <a href="https://wa.me/+61449903075" target="_blank" style="color: #1a3a5f; text-decoration: none;">
+                    <a href="https://wa.me/+61449903075" class="me-3" target="_blank" style="color: #1a3a5f; text-decoration: none;">
                         <i class="fab fa-whatsapp"></i> WhatsApp
                     </a>
+                    <a href="https://github.com/Rabby3075" class="me-3" target="_blank" style="color: #1a3a5f; text-decoration: none;">
+                        <i class="fab fa-github"></i> Github
+                    </a>
                 </div>
-
-                <a href="path/to/your-cv.pdf" download class="btn btn-primary mt-3"><i class="fa-solid fa-file me-2"></i>Download CV</a>
+                <a href="#" class="btn btn-primary mt-3" data-bs-toggle="modal" data-bs-target="#resumeModal">
+                    <i class="fa-solid fa-file me-2"></i>Resume
+                </a>                
             </div>
         
             <!-- Right Column: Profile Image -->
@@ -74,7 +78,61 @@
                 <img src="image/profile_image.png" alt="Rashedul Haque" class="img-fluid rounded-circle" style="max-width: 250px;">
             </div>
         </div>
+    <!-- Resume Modal -->
+    <div class="modal fade" id="resumeModal" tabindex="-1" aria-labelledby="resumeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="resumeModalLabel">Rashedul Haque - Resume</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <iframe src="image/Rashedul Haque Resume.pdf" width="100%" height="500px"></iframe>
+                </div>
+                <div class="modal-footer">
+                    <a href="image/Rashedul Haque Resume.pdf" download class="btn btn-primary">
+                        <i class="fa-solid fa-download me-2"></i>Download Resume
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
     </section>
+   <!--Hobby Section-->
+    <section id="hobbies" class="container my-5 p-5" style="background-color: #f0f4f8; border-radius: 10px;">
+        <h2 style="border-bottom: 3px solid #1a3a5f; padding-bottom: 10px;">Hobbies</h2>
+        <div class="row mt-4 d-flex justify-content-around align-items-center">
+            <!-- Food Image and Description -->
+            <div class="col-md-5 mb-4 d-flex flex-column align-items-center">
+                <div class="hobby-description-box p-3 text-center mb-3">
+                    <p>I love exploring new places and learning about different cultures.</p>
+                </div>
+                <img src="image/food.jpg" alt="Food Lover" class="rounded-circle img-fluid hobby-image">
+                <h5 class="mt-2">Food Lover</h5>
+            </div>
+
+            <!-- Traveling Image and Description -->
+            <div class="col-md-5 mb-4 d-flex flex-column align-items-center">
+                <img src="image/travel.jpg" alt="Traveling" class="rounded-circle img-fluid hobby-image">
+                <h5 class="mt-2">Traveling</h5>
+                <div class="hobby-description-box p-3 text-center mt-3">
+                    <p>Traveling is my way to relax and find inspiration.</p>
+                </div>
+            </div>
+
+            <!-- Gaming Image and Description -->
+            <div class="col-md-5 mb-4 d-flex flex-column align-items-center">
+                <div class="hobby-description-box p-3 text-center mb-3">
+                    <p>Gaming helps me stay sharp and improve my strategic thinking.</p>
+                </div>
+                <img src="image/Gaming.jpg" alt="Gaming" class="rounded-circle img-fluid hobby-image">
+                <h5 class="mt-2">Gaming</h5>
+            </div>
+        </div>
+    </section>
+
+    
 
     <!-- Education Section -->
     <section id="education" class="container my-5 p-5" style="background-color: #f0f4f8; border-radius: 10px;">
@@ -87,7 +145,7 @@
             <!-- Master's Degree -->
             <div class="row mb-5 position-relative">
                 <!-- Circle for intersection -->
-                <div class="circle position-absolute start-50 translate-middle" style="top: 0; transform: translateX(-50%) translateY(-50%); width: 15px; height: 15px; background-color: #1a3a5f; border-radius: 50%;"></div>
+                <div class="circle position-absolute start-50 translate-middle"></div>
                 <div class="col-md-6 text-end">
                     <p class="text-muted">2024 - 2025</p>
                 </div>
@@ -114,7 +172,7 @@
             <!-- Bachelor's Degree -->
             <div class="row mb-5 position-relative">
                 <!-- Circle for intersection -->
-                <div class="circle position-absolute start-50 translate-middle" style="top: 0; transform: translateX(-50%) translateY(-50%); width: 15px; height: 15px; background-color: #1a3a5f; border-radius: 50%;"></div>
+                <div class="circle position-absolute start-50 translate-middle"></div>
                 <div class="col-md-6 text-start order-md-2">
                     <p class="text-muted">2019 - 2022</p>
                 </div>
@@ -173,7 +231,7 @@
             <!-- Job 1 -->
             <div class="row mb-5 position-relative">
                 <!-- Circle for intersection -->
-                <div class="circle position-absolute start-50 translate-middle" style="top: 0; transform: translateX(-50%) translateY(-50%); width: 15px; height: 15px; background-color: #1a3a5f; border-radius: 50%;"></div>
+                <div class="circle position-absolute start-50 translate-middle"></div>
                 <div class="col-md-6 text-end">
                     <p class="text-muted">Jun 2023 - Oct 2023</p>
                 </div>
@@ -201,7 +259,7 @@
             <!-- Job 2 -->
             <div class="row mb-5 position-relative">
                 <!-- Circle for intersection -->
-                <div class="circle position-absolute start-50 translate-middle" style="top: 0; transform: translateX(-50%) translateY(-50%); width: 15px; height: 15px; background-color: #1a3a5f; border-radius: 50%;"></div>
+                <div class="circle position-absolute start-50 translate-middle"></div>
                 <div class="col-md-6 text-start order-md-2">
                     <p class="text-muted">Aug 2022 - Nov 2022</p>
                 </div>
@@ -315,8 +373,43 @@
             </div>
         </div>
     </section>
+    <!-- Skills Section -->
+    <section id="skills" class="container my-5 p-5" style="background-color: #f0f4f8; border-radius: 10px;">
+        <h2 style="border-bottom: 3px solid #1a3a5f; padding-bottom: 10px;">Skills</h2>
+        <div class="row mt-4">
+            <!-- Technical Skills -->
+            <div class="col-md-5 mb-4">
+                <h4 class="text-primary">Technical Skills</h4>
+                <ul class="list-unstyled">
+                    <li><strong>Programming Languages and Scripting:</strong> C, C++, Java, C#, PHP, JavaScript, Python</li>
+                    <li><strong>Full-stack Framework & Libraries:</strong> Django, Laravel, React JS, Vue JS</li>
+                    <li><strong>Machine Learning Libraries:</strong> TensorFlow, Scikit-Learn, Pandas, Numpy, Matplotlib</li>
+                    <li><strong>Data Visualization:</strong> Power BI, Tableau</li>
+                    <li><strong>Database:</strong> MySQL, Oracle</li>
+                </ul>
+            </div>
+
+            <!-- Divider -->
+            <div class="col-md-1 d-flex justify-content-center">
+                <div class="divider"></div>
+            </div>
+
+            <!-- General Skills -->
+            <div class="col-md-5 mb-4">
+                <h4 class="text-primary">General Skills</h4>
+                <ul class="list-unstyled">
+                    <li><i class="fa-solid fa-users me-2"></i> Team Working</li>
+                    <li><i class="fa-solid fa-brain me-2"></i> Fast Learning</li>
+                    <li><i class="fa-solid fa-clock me-2"></i> Time Management</li>
+                    <li><i class="fa-solid fa-car me-2"></i> Driving</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+
     <!-- Competitions and Achievements Section -->
-    <section id="competitions" class="container my-5 p-5" style="background-color: #f0f4f8; border-radius: 10px;">
+    <section id="achievements" class="container my-5 p-5" style="background-color: #f0f4f8; border-radius: 10px;">
         <h2 style="border-bottom: 3px solid #1a3a5f; padding-bottom: 10px;">Competitions and Achievements</h2>
 
         <!-- Cards Row -->
@@ -439,9 +532,9 @@
     <footer class="bg-dark text-light text-center py-3">
         <p>&copy; 2023 Rashedul Haque. All rights reserved.</p>
     </footer>
-  <!-- Scroll Up Button -->
-<button id="scrollUpButton" onclick="scrollToTop()" title="Go to top">
-    <i class="fa-solid fa-arrow-up"></i>
-</button>
+    <!-- Scroll Up Button -->
+    <button id="scrollUpButton" onclick="scrollToTop()" title="Go to top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
 </body>
 </html>

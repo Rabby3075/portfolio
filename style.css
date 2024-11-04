@@ -102,4 +102,44 @@
     #scrollUpButton:hover {
         background-color: #0d2742; /* Darker background on hover */
     }
+    .translate-middle{
+        top: 0; 
+        transform: translateX(-50%) translateY(-50%); 
+        width: 15px; 
+        height: 15px;
+         background-color: #1a3a5f; 
+         border-radius: 50%;
+    }
+    .translate-middle:hover{
+         background-color: #ff2600; 
+    }
+    .hobby-image {
+        width: 200px;
+        height: 200px;
+        border: 3px solid #1a3a5f;
+        transition: transform 0.3s ease;
+    }
+    
+    .hobby-image:hover {
+        transform: scale(1.1); /* Slight zoom on hover */
+    }
+    
+    .hobby-description-box {
+        width: 250px;
+        border: 2px solid #1a3a5f;
+        border-radius: 10px;
+        background-color: #ffffff;
+        color: #1a3a5f;
+    }
+    
+    #hobbies h5 {
+        color: #1a3a5f;
+        font-weight: 600;
+    }
+    .divider {
+        width: 2px;
+        background-color: #1a3a5f;
+        height: 100%;
+    }
+    
     
