@@ -5,62 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--Bootstrap CSS-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!--Style.css-->
+    <link rel="stylesheet" href="style.css">
     <!--Font awsome icon-->
     <script src="https://kit.fontawesome.com/d4fd55d14f.js" crossorigin="anonymous"></script>
      <!--Bootstrap JS-->
      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
      <!-- Custom CSS for styling -->
-<style>
-    /* Custom Tab Styling */
-    .custom-tab {
-        background-color: #1a3a5f;
-        color: white;
-        border-radius: 20px;
-        margin-right: 5px;
-        padding: 10px 15px;
-        transition: background-color 0.3s;
-    }
-
-    .custom-tab.active, .custom-tab:hover {
-        background-color: #0d2d4d;
-        color: white;
-    }
-
-    /* Project Card Hover Icons */
-    .card-img-container {
-        position: relative;
-    }
-
-    .card-img-top {
-        width: 100%;
-        height: 200px;
-        object-fit: cover;
-    }
-
-    .overlay-icons {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: rgba(0, 0, 0, 0.6);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 20px;
-        opacity: 0;
-        transition: opacity 0.3s ease;
-    }
-
-    .overlay-icons i {
-        color: #fff;
-        font-size: 1.5rem;
-    }
-
-    .project-card:hover .overlay-icons {
-        opacity: 1;
-    }
-</style>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #1a3a5f;">
@@ -79,6 +30,12 @@
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#" style="color: #f8f9fa;"><i class="fa-solid fa-list-check me-2"></i>Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" style="color: #f8f9fa;"><i class="fa-solid fa-award me-2"></i></i>Achievement & Award</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" style="color: #f8f9fa;"><i class="fa-solid fa-certificate me-2"></i>Certification</a>
               </li>
             </ul>
           </div>
@@ -240,7 +197,7 @@
                                     <p class="text-muted mb-1">Diligent Soft IT · Internship</p>
                                 </div>
                             </div>
-                            <p>As part of my undergraduate program, I completed an internship at Discrete Soft IT as a Laravel Developer. This experience enhanced my professional skills and gave me a deeper understanding of industry culture.</p>
+                            <p>As part of my undergraduate program, I completed an internship at Diligent Soft IT as a Laravel Developer. This experience enhanced my professional skills and gave me a deeper understanding of industry culture.</p>
                             <ul>
                                 <li>Developed teamwork, communication, and time management skills.</li>
                                 <li>Gained valuable problem-solving strategies and learned website hosting on AWS.</li>
@@ -252,94 +209,214 @@
             </div>
         </div>
     </section>
-<!-- Projects Section -->
-<section id="projects" class="container my-5 p-5" style="background-color: #f0f4f8; border-radius: 10px;">
-    <h2 style="border-bottom: 3px solid #1a3a5f; padding-bottom: 10px;">Projects</h2>
-    
-    <!-- Tabs Navigation -->
-    <ul class="nav nav-pills justify-content-center mb-4" id="projectTabs" role="tablist" style="gap: 10px;">
-        <li class="nav-item" role="presentation">
-            <button class="nav-link active custom-tab" id="web-dev-tab" data-bs-toggle="tab" data-bs-target="#web-dev" type="button" role="tab" aria-controls="web-dev" aria-selected="true">Web Development</button>
-        </li>
-        <li class="nav-item" role="presentation">
-            <button class="nav-link custom-tab" id="ml-tab" data-bs-toggle="tab" data-bs-target="#ml" type="button" role="tab" aria-controls="ml" aria-selected="false">Machine Learning</button>
-        </li>
-        <li class="nav-item" role="presentation">
-            <button class="nav-link custom-tab" id="mobile-tab" data-bs-toggle="tab" data-bs-target="#mobile" type="button" role="tab" aria-controls="mobile" aria-selected="false">Mobile Apps</button>
-        </li>
-    </ul>
+    <!-- Projects Section -->
+    <section id="projects" class="container my-5 p-5" style="background-color: #f0f4f8; border-radius: 10px;">
+        <h2 style="border-bottom: 3px solid #1a3a5f; padding-bottom: 10px;">Projects</h2>
+        
+        <!-- Tabs Navigation -->
+        <ul class="nav nav-pills justify-content-center mb-4" id="projectTabs" role="tablist" style="gap: 10px;">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active custom-tab" id="web-dev-tab" data-bs-toggle="tab" data-bs-target="#web-dev" type="button" role="tab" aria-controls="web-dev" aria-selected="true">Web Development</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link custom-tab" id="ml-tab" data-bs-toggle="tab" data-bs-target="#ml" type="button" role="tab" aria-controls="ml" aria-selected="false">Machine Learning</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link custom-tab" id="mobile-tab" data-bs-toggle="tab" data-bs-target="#mobile" type="button" role="tab" aria-controls="mobile" aria-selected="false">Mobile Apps</button>
+            </li>
+        </ul>
 
-    <!-- Tabs Content -->
-    <div class="tab-content" id="projectTabsContent">
-        <!-- Web Development Projects -->
-        <div class="tab-pane fade show active" id="web-dev" role="tabpanel" aria-labelledby="web-dev-tab">
-            <div class="row mt-4">
-                <!-- Project Card -->
-                <div class="col-md-3 mb-4">
-                    <div class="card project-card">
-                        <div class="card-img-container position-relative">
-                            <img src="path/to/your/image1.jpg" class="card-img-top" alt="Project Image">
-                            <div class="overlay-icons">
-                                <a href="https://github.com/yourproject" target="_blank"><i class="fab fa-github"></i></a>
-                                <a href="https://drive.google.com/yourproject" target="_blank"><i class="fas fa-cloud-download-alt"></i></a>
-                                <a href="https://yourprojectlink.com" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+        <!-- Tabs Content -->
+        <div class="tab-content" id="projectTabsContent">
+            <!-- Web Development Projects -->
+            <div class="tab-pane fade show active" id="web-dev" role="tabpanel" aria-labelledby="web-dev-tab">
+                <div class="row mt-4">
+                    <!-- Project Card -->
+                    <div class="col-md-3 mb-4">
+                        <div class="card project-card">
+                            <div class="card-img-container position-relative">
+                                <img src="path/to/your/image1.jpg" class="card-img-top" alt="Project Image">
+                                <div class="overlay-icons">
+                                    <a href="https://github.com/yourproject" target="_blank"><i class="fab fa-github"></i></a>
+                                    <a href="https://drive.google.com/yourproject" target="_blank"><i class="fas fa-cloud-download-alt"></i></a>
+                                    <a href="https://yourprojectlink.com" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                                </div>
                             </div>
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title">E-commerce Website</h5>
-                            <p class="card-text">Developed a full-stack e-commerce application using Laravel and Vue.js.</p>
+                            <div class="card-body">
+                                <h5 class="card-title">E-commerce Website</h5>
+                                <p class="card-text">Developed a full-stack e-commerce application using Laravel and Vue.js.</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <!-- Add more project cards as needed -->
-            </div>
-        </div>
-
-        <!-- Machine Learning Projects -->
-        <div class="tab-pane fade" id="ml" role="tabpanel" aria-labelledby="ml-tab">
-            <div class="row mt-4">
-                <div class="col-md-3 mb-4">
-                    <div class="card project-card">
-                        <div class="card-img-container position-relative">
-                            <img src="path/to/your/image2.jpg" class="card-img-top" alt="Project Image">
-                            <div class="overlay-icons">
-                                <a href="https://github.com/yourproject" target="_blank"><i class="fab fa-github"></i></a>
-                                <a href="https://drive.google.com/yourproject" target="_blank"><i class="fas fa-cloud-download-alt"></i></a>
-                                <a href="https://yourprojectlink.com" target="_blank"><i class="fas fa-external-link-alt"></i></a>
-                            </div>
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title">Car Price Prediction</h5>
-                            <p class="card-text">A regression model to predict car prices based on various features.</p>
-                        </div>
-                    </div>
+                    <!-- Add more project cards as needed -->
                 </div>
             </div>
-        </div>
 
-        <!-- Mobile Apps Projects -->
-        <div class="tab-pane fade" id="mobile" role="tabpanel" aria-labelledby="mobile-tab">
-            <div class="row mt-4">
-                <div class="col-md-3 mb-4">
-                    <div class="card project-card">
-                        <div class="card-img-container position-relative">
-                            <img src="path/to/your/image3.jpg" class="card-img-top" alt="Project Image">
-                            <div class="overlay-icons">
-                                <a href="https://github.com/yourproject" target="_blank"><i class="fab fa-github"></i></a>
-                                <a href="https://drive.google.com/yourproject" target="_blank"><i class="fas fa-cloud-download-alt"></i></a>
-                                <a href="https://yourprojectlink.com" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+            <!-- Machine Learning Projects -->
+            <div class="tab-pane fade" id="ml" role="tabpanel" aria-labelledby="ml-tab">
+                <div class="row mt-4">
+                    <div class="col-md-3 mb-4">
+                        <div class="card project-card">
+                            <div class="card-img-container position-relative">
+                                <img src="path/to/your/image2.jpg" class="card-img-top" alt="Project Image">
+                                <div class="overlay-icons">
+                                    <a href="https://github.com/yourproject" target="_blank"><i class="fab fa-github"></i></a>
+                                    <a href="https://drive.google.com/yourproject" target="_blank"><i class="fas fa-cloud-download-alt"></i></a>
+                                    <a href="https://yourprojectlink.com" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                                </div>
                             </div>
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title">Health Tracker</h5>
-                            <p class="card-text">A mobile app to track health metrics developed using Flutter.</p>
+                            <div class="card-body">
+                                <h5 class="card-title">Car Price Prediction</h5>
+                                <p class="card-text">A regression model to predict car prices based on various features.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+
+            <!-- Mobile Apps Projects -->
+            <div class="tab-pane fade" id="mobile" role="tabpanel" aria-labelledby="mobile-tab">
+                <div class="row mt-4">
+                    <div class="col-md-3 mb-4">
+                        <div class="card project-card">
+                            <div class="card-img-container position-relative">
+                                <img src="path/to/your/image3.jpg" class="card-img-top" alt="Project Image">
+                                <div class="overlay-icons">
+                                    <a href="https://github.com/yourproject" target="_blank"><i class="fab fa-github"></i></a>
+                                    <a href="https://drive.google.com/yourproject" target="_blank"><i class="fas fa-cloud-download-alt"></i></a>
+                                    <a href="https://yourprojectlink.com" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Health Tracker</h5>
+                                <p class="card-text">A mobile app to track health metrics developed using Flutter.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
-</section>
+    </section>
+    <!-- Competitions and Achievements Section -->
+    <section id="competitions" class="container my-5 p-5" style="background-color: #f0f4f8; border-radius: 10px;">
+        <h2 style="border-bottom: 3px solid #1a3a5f; padding-bottom: 10px;">Competitions and Achievements</h2>
+
+        <!-- Cards Row -->
+        <div class="row mt-4">
+            <!-- Achievement Card 1 -->
+            <div class="col-md-3 mb-4">
+                <div class="card achievement-card" data-bs-toggle="modal" data-bs-target="#achievementModal1">
+                    <img src="path/to/certificate1-thumbnail.jpg" class="card-img-top" alt="Certificate Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Dean's Award Fall 2021-22</h5>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Achievement Card 2 -->
+            <div class="col-md-3 mb-4">
+                <div class="card achievement-card" data-bs-toggle="modal" data-bs-target="#achievementModal2">
+                    <img src="path/to/certificate2-thumbnail.jpg" class="card-img-top" alt="Certificate Image">
+                    <div class="card-body">
+                        <h5 class="card-title">AI Competition Winner 2023</h5>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Repeat for more achievements as needed -->
+        </div>
+
+        <!-- Modal for Achievement 1 -->
+        <div class="modal fade" id="achievementModal1" tabindex="-1" aria-labelledby="achievementModal1Label" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="achievementModal1Label">Dean's Award Fall 2021-22</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="path/to/certificate1-full.jpg" class="img-fluid" alt="Full Certificate Image">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal for Achievement 2 -->
+        <div class="modal fade" id="achievementModal2" tabindex="-1" aria-labelledby="achievementModal2Label" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="achievementModal2Label">AI Competition Winner 2023</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="path/to/certificate2-full.jpg" class="img-fluid" alt="Full Certificate Image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Certifications Section -->
+    <section id="certifications" class="container my-5 p-5" style="background-color: #f0f4f8; border-radius: 10px;">
+        <h2 style="border-bottom: 3px solid #1a3a5f; padding-bottom: 10px;">Certifications</h2>
+
+        <!-- Cards Row -->
+        <div class="row mt-4">
+            <!-- Certification Card 1 -->
+            <div class="col-md-3 mb-4">
+                <div class="card certification-card" data-bs-toggle="modal" data-bs-target="#certificationModal1">
+                    <img src="path/to/certificate1-thumbnail.jpg" class="card-img-top" alt="Certification Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Certified Machine Learning Specialist</h5>
+                        <p class="card-text">This certification validates expertise in supervised and unsupervised learning algorithms and model evaluation.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Certification Card 2 -->
+            <div class="col-md-3 mb-4">
+                <div class="card certification-card" data-bs-toggle="modal" data-bs-target="#certificationModal2">
+                    <img src="path/to/certificate2-thumbnail.jpg" class="card-img-top" alt="Certification Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Data Science Professional</h5>
+                        <p class="card-text">Comprehensive understanding of data wrangling, visualization, and statistical analysis using Python.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Repeat for more certifications as needed -->
+        </div>
+
+        <!-- Modal for Certification 1 -->
+        <div class="modal fade" id="certificationModal1" tabindex="-1" aria-labelledby="certificationModal1Label" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="certificationModal1Label">Certified Machine Learning Specialist</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="path/to/certificate1-full.jpg" class="img-fluid" alt="Full Certification Image">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal for Certification 2 -->
+        <div class="modal fade" id="certificationModal2" tabindex="-1" aria-labelledby="certificationModal2Label" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="certificationModal2Label">Data Science Professional</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="path/to/certificate2-full.jpg" class="img-fluid" alt="Full Certification Image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <!-- Footer Section -->
     <footer class="bg-dark text-light text-center py-3">
         <p>&copy; 2023 Rashedul Haque. All rights reserved.</p>
